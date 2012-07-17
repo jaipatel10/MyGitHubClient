@@ -1,0 +1,295 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_homepage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android1:id="@+id/txt_header"
+        android1:layout_width="fill_parent"
+        android1:layout_height="25dp"
+        android1:background="#000000"
+        android1:gravity="left|center"
+        android1:paddingLeft="10dp"
+        android1:text="GitHub Client - Profile"
+        android1:textColor="#FFFFFF"
+        android1:textStyle="bold" />
+
+    <ScrollView
+        android1:id="@+id/myscroll"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/txt_header" >
+
+        <RelativeLayout
+            android1:id="@+id/InnerRel"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content" >
+
+            <ImageView
+                android1:id="@+id/img_profilepic"
+                android1:layout_width="70dp"
+                android1:layout_height="70dp"
+                android1:layout_alignParentLeft="true"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginTop="10dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/default_gravatar" />
+
+            <TextView
+                android1:id="@+id/txt_nameofuser"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_marginLeft="20dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:layout_toRightOf="@+id/img_profilepic"
+                android1:text="Name"
+                android1:textColor="#000000"
+                android1:textSize="18sp"
+                android1:textStyle="bold" />
+
+            <TextView
+                android1:id="@+id/txt_emailid"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_below="@+id/txt_nameofuser"
+                android1:layout_marginLeft="20dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="5dp"
+                android1:layout_toRightOf="@+id/img_profilepic"
+                android1:text="Email"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_websiteURL"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_below="@+id/txt_emailid"
+                android1:layout_marginLeft="20dp"
+                android1:layout_marginTop="5dp"
+                android1:layout_toRightOf="@+id/img_profilepic"
+                android1:text="WebsiteURL"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_location"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentLeft="true"
+                android1:layout_below="@+id/img_profilepic"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:text="Location"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_companyname"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentLeft="true"
+                android1:layout_below="@+id/txt_location"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:text="Company name"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_followers"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentLeft="true"
+                android1:layout_below="@+id/txt_companyname"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:text="Followors"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_following"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentLeft="true"
+                android1:layout_below="@+id/txt_followers"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:text="Following"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_collaborators"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentLeft="true"
+                android1:layout_below="@+id/txt_following"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:text="Collaborators"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_privategist"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentLeft="true"
+                android1:layout_below="@+id/txt_collaborators"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:text="Private Gist"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_publicgist"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentLeft="true"
+                android1:layout_below="@+id/txt_privategist"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:text="Public Gist"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_privaterepo"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentLeft="true"
+                android1:layout_below="@+id/txt_publicgist"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:text="Private Repo"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_publicrepo"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentLeft="true"
+                android1:layout_below="@+id/txt_privaterepo"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:text="Public Repo"
+                android1:textColor="#000000"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_locationvalue"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignBaseline="@+id/txt_location"
+                android1:layout_marginLeft="5dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_toRightOf="@+id/txt_location"
+                android1:textColor="#00FF00"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_companynamevalue"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignBaseline="@+id/txt_companyname"
+                android1:layout_marginLeft="5dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_toRightOf="@id/txt_companyname"
+                android1:textColor="#00FF00"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_followrsvalue"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignBaseline="@+id/txt_followers"
+                android1:layout_marginLeft="5dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_toRightOf="@+id/txt_followers"
+                android1:textColor="#00FF00"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_followingvalue"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignBaseline="@+id/txt_following"
+                android1:layout_marginLeft="5dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_toRightOf="@id/txt_following"
+                android1:textColor="#00FF00"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_collaboratesvalue"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignBaseline="@+id/txt_collaborators"
+                android1:layout_marginLeft="5dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_toRightOf="@+id/txt_collaborators"
+                android1:textColor="#00FF00"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_privategistvalue"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignBaseline="@+id/txt_privategist"
+                android1:layout_marginLeft="5dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_toRightOf="@+id/txt_privategist"
+                android1:textColor="#00FF00"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_publicgistvalue"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignBaseline="@+id/txt_publicgist"
+                android1:layout_marginLeft="5dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_toRightOf="@+id/txt_publicgist"
+                android1:textColor="#00FF00"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_privaterepovalue"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignBaseline="@+id/txt_privaterepo"
+                android1:layout_marginLeft="5dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_toRightOf="@+id/txt_privaterepo"
+                android1:textColor="#00FF00"
+                android1:textSize="16sp" />
+
+            <TextView
+                android1:id="@+id/txt_publicrepovalue"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignBaseline="@+id/txt_publicrepo"
+                android1:layout_marginRight="10dp"
+                android1:layout_toRightOf="@+id/txt_publicrepo"
+                android1:textColor="#00FF00"
+                android1:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

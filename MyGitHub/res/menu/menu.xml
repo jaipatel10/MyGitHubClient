@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_myownrepo"
+        android:title="My Public Repos"/>
+    <item
+        android:id="@+id/menu_repofollow"
+        android:title="Repos that I follow"/>
+
+</menu>
